@@ -1,0 +1,41 @@
+Source-Makefile: package/triductor/tr5220/Makefile
+
+Package: tr5220-eFEM
+Submenu: WiFi
+Version: 1.0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-cfg80211 +@DRIVER_11AC_SUPPORT +@DRIVER_11N_SUPPORT +@DRIVER_11AX_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: eFEM
+Section: base
+Category: Triductor
+Repository: base
+Title: Driver for Triductor tr5220 (with external FEM)
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Driver for Triductor tr5220 (with external FEM)
+
+@@
+
+Package: tr5220-iFEM
+Submenu: WiFi
+Version: 1.0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-cfg80211 +@DRIVER_11AC_SUPPORT +@DRIVER_11N_SUPPORT +@DRIVER_11AX_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: iFEM
+Section: base
+Category: Triductor
+Repository: base
+Title: Driver for Triductor tr5220 (with internal FEM)
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Driver for Triductor tr5220 (with internal FEM)
+
+@@
+
+

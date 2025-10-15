@@ -1,0 +1,649 @@
+Source-Makefile: package/triductor/luci-app-rate-limit/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-rate-limit
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-compat +trinft-qos
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Triductor
+Repository: base
+Title: Triductor Rate Limit
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: Triductor Rate Limit
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-rate-limit-ar
+Default: LUCI_LANG_ar||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - ar translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - العربية (Arabic)
+
+@@
+
+Package: luci-i18n-rate-limit-bg
+Default: LUCI_LANG_bg||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - bg translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - български (Bulgarian)
+
+@@
+
+Package: luci-i18n-rate-limit-bn
+Default: LUCI_LANG_bn_BD||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - bn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - বাংলা (Bengali)
+
+@@
+
+Package: luci-i18n-rate-limit-ca
+Default: LUCI_LANG_ca||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - ca translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Català (Catalan)
+
+@@
+
+Package: luci-i18n-rate-limit-cs
+Default: LUCI_LANG_cs||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - cs translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Čeština (Czech)
+
+@@
+
+Package: luci-i18n-rate-limit-da
+Default: LUCI_LANG_da||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - da translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Dansk (Danish)
+
+@@
+
+Package: luci-i18n-rate-limit-de
+Default: LUCI_LANG_de||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - de translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Deutsch (German)
+
+@@
+
+Package: luci-i18n-rate-limit-el
+Default: LUCI_LANG_el||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - el translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Ελληνικά (Greek)
+
+@@
+
+Package: luci-i18n-rate-limit-en
+Default: LUCI_LANG_en||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - en translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - English
+
+@@
+
+Package: luci-i18n-rate-limit-es
+Default: LUCI_LANG_es||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - es translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Español (Spanish)
+
+@@
+
+Package: luci-i18n-rate-limit-fi
+Default: LUCI_LANG_fi||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - fi translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Suomi (Finnish)
+
+@@
+
+Package: luci-i18n-rate-limit-fr
+Default: LUCI_LANG_fr||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - fr translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Français (French)
+
+@@
+
+Package: luci-i18n-rate-limit-he
+Default: LUCI_LANG_he||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - he translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - עִבְרִית (Hebrew)
+
+@@
+
+Package: luci-i18n-rate-limit-hi
+Default: LUCI_LANG_hi||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - hi translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - हिंदी (Hindi)
+
+@@
+
+Package: luci-i18n-rate-limit-hu
+Default: LUCI_LANG_hu||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - hu translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Magyar (Hungarian)
+
+@@
+
+Package: luci-i18n-rate-limit-it
+Default: LUCI_LANG_it||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - it translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Italiano (Italian)
+
+@@
+
+Package: luci-i18n-rate-limit-ja
+Default: LUCI_LANG_ja||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - ja translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - 日本語 (Japanese)
+
+@@
+
+Package: luci-i18n-rate-limit-ko
+Default: LUCI_LANG_ko||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - ko translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - 한국어 (Korean)
+
+@@
+
+Package: luci-i18n-rate-limit-mr
+Default: LUCI_LANG_mr||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - mr translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Marāṭhī (Marathi)
+
+@@
+
+Package: luci-i18n-rate-limit-ms
+Default: LUCI_LANG_ms||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - ms translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Bahasa Melayu (Malay)
+
+@@
+
+Package: luci-i18n-rate-limit-no
+Default: LUCI_LANG_nb_NO||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - no translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Norsk (Norwegian)
+
+@@
+
+Package: luci-i18n-rate-limit-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - pl translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Polski (Polish)
+
+@@
+
+Package: luci-i18n-rate-limit-pt
+Default: LUCI_LANG_pt||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - pt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Português (Portuguese)
+
+@@
+
+Package: luci-i18n-rate-limit-pt-br
+Default: LUCI_LANG_pt_BR||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - pt-br translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Português do Brasil (Brazilian Portuguese)
+
+@@
+
+Package: luci-i18n-rate-limit-ro
+Default: LUCI_LANG_ro||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - ro translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Română (Romanian)
+
+@@
+
+Package: luci-i18n-rate-limit-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - ru translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Русский (Russian)
+
+@@
+
+Package: luci-i18n-rate-limit-sk
+Default: LUCI_LANG_sk||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - sk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Slovenčina (Slovak)
+
+@@
+
+Package: luci-i18n-rate-limit-sv
+Default: LUCI_LANG_sv||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - sv translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Svenska (Swedish)
+
+@@
+
+Package: luci-i18n-rate-limit-tr
+Default: LUCI_LANG_tr||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - tr translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Türkçe (Turkish)
+
+@@
+
+Package: luci-i18n-rate-limit-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - uk translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Українська (Ukrainian)
+
+@@
+
+Package: luci-i18n-rate-limit-vi
+Default: LUCI_LANG_vi||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - vi translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - Tiếng Việt (Vietnamese)
+
+@@
+
+Package: luci-i18n-rate-limit-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - 简体中文 (Chinese Simplified)
+
+@@
+
+Package: luci-i18n-rate-limit-zh-tw
+Default: LUCI_LANG_zh_Hant||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-rate-limit
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rate-limit - zh-tw translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rate-limit - 繁體中文 (Chinese Traditional)
+
+@@
+
+
